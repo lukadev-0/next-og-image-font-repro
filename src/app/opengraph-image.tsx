@@ -14,7 +14,7 @@ const font = fs.promises.readFile(
 );
 
 export default async function og() {
-  const res = fetch("https://jsonplaceholder.typicode.com/todos/1", {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1", {
     cache: "no-store",
   });
 
